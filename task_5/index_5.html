@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_5.css">
+    <title>task_5</title>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="task">
+            <div class="task__title">Задание 5</div>
+        <div class="task__description">Реализовать чат на основе эхо-сервера wss://echo-ws-service.herokuapp.com/
+            <p>
+            <ol>
+                <li>
+                    Интерфейс состоит из input, куда вводится текст сообщения, и кнопки «Отправить».
+                </li>
+                <li>
+                    При клике на кнопку «Отправить» сообщение должно появляться в окне переписки.
+                </li>
+                <li>
+                    Эхо-сервер будет отвечать вам тем же сообщением, его также необходимо выводить в чат:
+                </li>
+                <li>
+                    Добавить в чат механизм отправки гео-локации:
+                <br>
+                    При клике на кнопку «Гео-локация» необходимо отправить данные серверу и в чат вывести ссылку на https://www.openstreetmap.org/ с вашей гео-локацией. Сообщение, которое отправит обратно эхо-сервер, не выводить.
+                </li>
+            </ol>
+        </p>
+        </div>
+    </div>
+        <div class="answer">
+                <div class="chat">
+                    <form class="form" action="#" >
+                        <input id="input" class="form__input" type="text" placeholder="Здесь вводится текст сообщения">
+                        <button id="btn" class="btn"  >Отправить</button>
+                        <button id="geo" class="btn location" >Гео-локация</button>
+                        </form>
+                        <div id="chat__wrap" class="chat__wrap">
+                            <div id="chat_user-messages" class="chat_user-messages"></div>
+                            <div id="chat__server-messages" class="chat__server-messages">Удалить все сообщения</div>
+                        </div>
+                </div>
+            </div>
+            <div class="data"></div>
+        </div>
+    </div>
+    <script src="js_5.js"></script>
+</body>
+</html>
+
+

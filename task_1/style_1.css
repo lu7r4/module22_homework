@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrap {
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.task, .answer {
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #00000042;
+    border-radius: 6px;
+}
+.task__title {
+    padding: 10px;
+    font-style: 18px;
+    font-weight: 600;
+}
+.task__description {
+
+}
+.answer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer__title {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.answer__svg {
+    width: 182px;
+    height: 122px;
+    border: 1px solid black;
+}
+
